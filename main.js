@@ -2,25 +2,22 @@
 // alert("Привет, JS!");
 
 //ВОЗМОЖНОСТИ ПЕРЕМЕННЫХ
+
 var message;//a-z, A-Z, 0-9, $, _
 var Message;
 var myMessage;
 myMessage = "Сообщение";
 
 //ОСНОВНЫЕ ТИПЫ ДАННЫХ
+
 var myNumber = 10.154;//можно ставить как целое так и с плавающей точкой = 10.484; а также отрицательные значения
 var myString = "Привет, Рома!";//переменная строка. Строки пишутся между кавычками. Могут быть и пустые строки
 var myBoolean = true;//false;
 var myNull = null;//пустое значение
 var myUndefined = undefined;//значения у переменной нету
 
-//ОБЪЕКТ
-var myObject = {
-	name:"Вася",
-	age: 25
-};
-
 // //ЧИСЛА
+
 // // var result = 40 + 10;
 // // alert(result);
 // alert(40 + 10);
@@ -44,12 +41,14 @@ var myObject = {
 // console.log(newNunber.toFixed(1));
 
 //СТРОКИ
+
 // console.log("40" + myNumber);
 // console.log(myString + " Как дела?");
 // console.log(myString.toLowerCase());//выводит текст в нижнем регистре
 // console.log(myString.toUpperCase());//в верхнем регистре
 
 //МАССИВЫ
+
 // var names = ["Вася","Петя","Женя"];
 // console.log(names[2]);
 // console.log(names[1].toUpperCase());
@@ -105,12 +104,63 @@ var myObject = {
 // 	console.log("Число больше 20");
 // }
 
-//Цыклы
+//ЦИКЛЫ
 
+//литерация от 0-9
+// for (var i = 0; i < 10; i++) {
+// 	console.log(i);
+// }
+// //литерация от 0-4
+// for (var i = 0; i < 10; i++) {
+// 	if (i == 5) {
+// 		break;
+// 	}
+// 	console.log(i);
+// }
+// //литерация пропускает "5"
+// for (var i = 0; i < 10; i++) {
+// 	if (i == 5) {
+// 		continue;
+// 	}
+// 	console.log(i);
+// }
+// for(var j = 0; j < names.length; j++) {
+// 	console.log(names[j]);
+// }
 
+// var i = 0;
+// while(i < 10) {
+// 	console.log(i);
+// 	i++;
+// }//аналог цикла for
 
+//ФУНКЦИИ
+// function test() {
+// 	console.log("Делаем что-то...");
+// }
+// test();
+// function sum(x, y) {
+// 	console.log(x + y);
+// }
+// sum(10, 59);
+// function sum(x, y) {
+// 	return x + y;
+// }
+// console.log(sum(10, 59));
+// console.log(sum(3, 164));
+// console.log(sum(8, 30));
 
+//ОБЪЕКТЫ
 
-
-
+// var myObject = {
+// 	name:"Вася",
+// 	surname: "Пьяточкин",
+// 	age: 25,
+// 	getFullName: function() {
+// 		return this.name + " " + this.surname;
+// 	}
+// };
+// myObject.name = "Петя";
+// console.log(myObject.name);//изначально был Вася, а потом его переименовали в Петю
+// console.log(myObject.getFullName());
 
