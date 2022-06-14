@@ -1,0 +1,209 @@
+@import
+'../fonts/stylesheet.css',
+'_param',
+'_header',
+'_footer';
+
+.main{
+   .hero_block{
+      background: #f4f4f4;
+      position: relative;
+      &::before{
+         content: "";
+         background: url('/img/Ellipse_1.png') no-repeat;
+         position: absolute;
+         top: 0;
+         left: 0;
+         z-index: 1;
+         display: block;
+      }
+   }
+   .img_block{
+      display: flex;
+      flex: 0 0 auto;
+      justify-content: center;
+      img{
+         width: 304px;
+         justify-content: center;
+         padding-top: 32px;
+      }
+   }   
+   .logo{
+      display: flex;
+      justify-content: center;
+      padding-top: 34px;
+      img{
+         width: 128px;
+         height: 20px;
+      }
+   }               
+   h2{
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 28px;
+      text-align: center;
+      padding: 25px 40px;
+   }   
+   p{
+      font-size: 12px;
+      line-height: 20px;
+      text-align: center;
+      padding: 0 30px 27px 30px;
+   }         
+   .btn_send{
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      left: 110px;
+      z-index: 1;
+      a{
+         background: #00AA8E;
+         box-shadow: 0px 4px 11px 2px rgba(33, 152, 107, 0.2);
+         border-radius: 100px;
+         min-width: 158px;
+         color: #fff;
+         white-space: normal;
+         font-size: 14px;
+         line-height: 24px;
+         padding: 9px 28px;
+      }
+   }
+}
+@media screen and (min-width: 768px){
+   .centered{
+      max-width: 560px;
+      z-index: 1;
+      position: relative;
+   } 
+   .main{ 
+      .hero_block{
+         // &::before{
+         //    content:"";
+         //    background-image: url('/img/Ellipse_2.png');
+         // }
+      } 
+      .img_block{
+         img{
+            width: 366px;
+            justify-content: center;
+            padding-top: 32px;
+         }
+      }
+      .logo{
+         padding-top: 28px;
+         img{
+            width: 160px;
+            height: 25px;
+         }
+      }
+      h2{
+         font-size: 26px;
+         line-height: 34px;
+         padding: 24px 16px;
+      }   
+      p{
+         font-size: 14px;
+         line-height: 24px;
+         padding-bottom: 34px;
+      }
+      .btn_send{
+         padding-bottom: 79px;
+         position: static;
+         padding-bottom: 0;
+      }
+      a{
+         font-size: 14px;
+         line-height: 24px;
+      }
+   }
+}
+@media screen and (min-width: 1025px){
+   .centered{
+      max-width: 752px;
+   }
+   .hero_block{
+      .centered{
+         display: flex;
+      }
+   }
+   .main{
+      .hero_block{
+         &::after{
+            content:"";
+            
+         }
+      }
+      .img_block{
+         display: block;
+         padding-top: 73px;
+         img{
+            width: 366px;
+         }
+      }
+   }
+   .text_block{
+      display: flex;
+      flex-wrap: wrap;
+      padding-top: 25px;
+      padding-left: 16px;
+      .logo{
+         img{
+            width: 160px;
+            height: 25px;
+         }
+      } 
+   }
+   .main{
+      h2{
+         font-size: 26px;
+         line-height: 34px;
+         text-align: inherit;
+         padding: 24px 0 8px 0;
+      }
+      p{
+         font-size: 14px;
+         line-height: 24px;
+         text-align: inherit;
+         padding: 8px 0 24px 0;
+      }
+   }
+}
+@media screen and (min-width:1440px){
+   .centered{
+      max-width: 1135px;
+   }
+   .img_block{
+      padding-top: 80px;
+      img{
+         padding-left: 10px;
+      }
+   }
+   .text_block{
+      width: 50%;
+      flex: 0 0 50%;
+      padding-top: 37px;
+      padding-left: 118px;
+      .logo{
+         padding: 0 10px;
+         img{
+            width: 192px;
+            height: 30px;
+         }
+      } 
+   }
+   .main{
+      .hero_block{
+         &::after{
+            content:"";
+            
+         }
+      }
+      h2{
+         font-size: 32px;
+         line-height: 40px;
+      }
+   }
+}
+.about_item{
+   background: #fff;
+}
